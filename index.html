@@ -13,27 +13,63 @@
     <title>Bootstrap</title>
 </head>
 
-<body>
-    <div class="container">
-        <div class="row">
-            <header class="p-3 m-0 border-0 bd-example m-0 border-0 bg-light">
-                <ul class="nav ">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Active</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                    </li>
-                </ul>
-        </div>
-    </div>
+<body class="">
+
+        <nav class="navbar navbar-expand-lg z-1 pt-4">
+            <div class="container ">
+                <h2>TECHIE</h2>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav ms-auto ">
+                        <!--ms-auto  is used to make the menu float right-->
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" href="#Home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#About">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#Services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#Portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#Team">Team</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown link
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Home</a></li>
+                                <li><a class="dropdown-item" href="#">About</a></li>
+                                <li><a class="dropdown-item" href="#">Services</a></li>
+                                <li><a class="dropdown-item" href="#">Services</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#Contact">Contact</a>
+                        </li>
+                        <button type="button" class="btn btn-outline-white text-white">Get Starded</button>
+                    </ul>
+                </div>
+            </div>
+
+    </nav>
     </header>
+                <img class="position-absolute top-0 start-0" src="/img/counts-bg.png" height="970px" width="1950px" alt="">
+
+ 
+
+
 </body>
 
 </html>
