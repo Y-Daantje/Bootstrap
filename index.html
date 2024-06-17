@@ -2,74 +2,615 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-    <title>Bootstrap</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="">
+<body>
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+      <a href="index.html" class="logo me-auto"><img src="/img/background/green-bg.png" alt="" class="img-fluid">
+          <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Drop down
+                  </a>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">contact</a>
+                </li>
+                <li class="nav-item">
+                  <button type="button" class="btn btn-outline-success">Get started</button>
+                </li>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+      </div>
+    </div>
+  </header>
+    <div class="row">
+      <div class="container-fluid">
+        <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true"
+              aria-label="First slide"></li>
+            <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
+            <li data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Third slide"></li>
+          </ol>
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+              <img src="/img pt2/slide-1.jpg" class="w-100 h-40 d-block" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img src="/img pt2/slide-2.jpg" class="w-100 h-40 d-block" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img src="/img pt2/slide-3.jpg" class="w-100 h-40 d-block" alt="Third slide">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
 
-        <nav class="navbar navbar-expand-lg z-1 pt-4">
-            <div class="container ">
-                <h2>TECHIE</h2>
+    <div class="row">
+      <section id="featured-services" class="featured-services section-bg">
+        <div class="container">
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse " id="navbarNav">
-                    <ul class="navbar-nav ms-auto ">
-                        <!--ms-auto  is used to make the menu float right-->
-                        <li class="nav-item">
-                            <a class="nav-link active text-white" href="#Home">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#About">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#Services">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#Portfolio">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#Team">Team</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Dropdown link
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Home</a></li>
-                                <li><a class="dropdown-item" href="#">About</a></li>
-                                <li><a class="dropdown-item" href="#">Services</a></li>
-                                <li><a class="dropdown-item" href="#">Services</a></li>
-
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#Contact">Contact</a>
-                        </li>
-                        <button type="button" class="btn btn-outline-white text-white">Get Starded</button>
-                    </ul>
+          <div class="row no-gutters">
+            <div class="col-lg-4 col-md-6">
+              <div class="icon-box">
+                <div class="icon m-3" style="font-size: 2rem; color: rgb(159, 226, 191) ;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="60" fill="currentColor" class="bi bi-laptop"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5" />
+                  </svg>
                 </div>
+                <h4 class="title">Lorem Ipsum</h4>
+                <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias
+                  excepturi sint occaecati cupiditate non provident</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="icon-box">
+                <div class="icon m-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="60" fill="currentColor" class="bi bi-briefcase"
+                    style="font-size: 2rem; color: rgb(159, 226, 191) ;" viewBox="0 0 16 16">
+                    <path
+                      d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5m1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0M1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5" />
+                  </svg>
+                </div>
+                <h4 class="title">Dolor Sitema</h4>
+                <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat tarad limino ata</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="icon-box">
+                <div class="icon m-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="60" fill="currentColor" class="bi bi-calendar-week"
+                    style="font-size: 2rem; color: rgb(159, 226, 191) ;" viewBox="0 0 16 16">
+                    <path
+                      d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z" />
+                    <path
+                      d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z" />
+                  </svg>
+                </div>
+                <h4 class="title">Sed ut perspiciatis</h4>
+                <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur trade stravi</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="row p-30 m-3">
+        <div class="col-5"></div>
+        <div class="col-2">
+          <h2>ABOUT US</h2>
+        </div>
+        <div class="row m-3">
+          <div class="col-11 Secondary text-center">Magnam dolores commodi suscipit. Necessitatibus eius
+            consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam
+            cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi
+            quidem hic quas.</div>
+        </div>
+      </div>
+      <div class="row m-3">
+        <div class="col-lg-7 pt-4 pt-lg-0 order-2 order-lg-1 content">
+          <h3 style="font-weight: 500;">Voluptatem dignissimos provident quasi corporis voluptates sit
+            assumenda.</h3>
+          <p class="fst-italic">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore
+            magna aliqua.
+          </p>
+          <ul class="list-unstyled">
+            <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </li>
+            <br>
+            <li><i class="bi bi-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate
+              velit.</li>
+            <br>
+            <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu
+              fugiat nulla pariatur.</li>
+          </ul>
+          <p>
+            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+            in voluptate
+            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum
+          </p>
+        </div>
+        <div class="col-lg-5 pt-4 pt-lg-0 order-2 order-lg-1 content">
+          <img style="width: 600px;" src="/img/blog/1.jpg" alt="">
+        </div>
+      </div>
+      <div class="row m-2">
+        <section id="why-us" class="why-us">
+          <div class="container">
+
+            <div class="row no-gutters">
+
+              <div class="col-lg-4 col-md-6 content-item border-end border-bottom">
+                <h3 class="text-success m-3">01</h3>
+                <h4 class="m-3">Lorem Ipsum</h4>
+                <p class="m-3 text-secondary">Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et
+                  consectetur ducimus vero placeat</p>
+              </div>
+
+              <div class="col-lg-4 col-md-6 content-item border-end border-bottom">
+                <h3 class="text-success m-3">02</h3>
+                <h4 class="m-3">Repellat Nihil</h4>
+                <p class="m-3 text-secondary">Dolorem est fugiat occaecati voluptate velit esse. Dicta
+                  veritatis dolor quod et vel dire leno para dest</p>
+              </div>
+
+              <div class="col-lg-4 col-md-6 content-item border-bottom">
+                <h3 class="text-success m-3">03</h3>
+                <h4 class="m-3"> Ad ad velit qui</h4>
+                <p class="m-3 text-secondary">Molestiae officiis omnis illo asperiores. Aut doloribus
+                  vitae sunt debitis quo vel nam quis</p>
+              </div>
+
+              <div class="col-lg-4 col-md-6 content-item border-end">
+                <h3 class="text-success m-3">04</h3>
+                <h4 class="m-3 ">Repellendus molestiae</h4>
+                <p class="text-secondary">Inventore quo sint a sint rerum. Distinctio blanditiis
+                  deserunt quod soluta quod nam mider lando casa</p>
+              </div>
+
+              <div class="col-lg-4 col-md-6 content-item border-end">
+                <h3 class="text-success m-3">05</h3>
+                <h4 class="m-3">Sapiente Magnam</h4>
+                <p class="m-3 text-secondary">Vitae dolorem in deleniti ipsum omnis tempore voluptatem.
+                  Qui possimus est repellendus est quibusdam</p>
+              </div>
+
+              <div class="col-lg-4 col-md-6 content-item">
+                <h3 class="text-success m-3">06</h3>
+                <h4 class="m-3">Facilis Impedit</h4>
+                <p class="m-3 text-secondary">Quis eum numquam veniam ea voluptatibus voluptas.
+                  Excepturi aut nostrum repudiandae voluptatibus corporis sequi</p>
+              </div>
+
             </div>
 
-    </nav>
-    </header>
-                <img class="position-absolute top-0 start-0" src="/img/counts-bg.png" height="970px" width="1950px" alt="">
+          </div>
+        </section>
+      </div>
+      <div class="row">
+        <div class="col-5"></div>
+        <div class="col-2">
+          <h2>OUR CLIENTS</h2>
+        </div>
+        <div class="row m-2">
+          <div class="col-11 text-secondary text-center">Magnam dolores commodi suscipit. Necessitatibus eius
+            consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam
+            cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi
+            quidem hic quas.</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-2">
+          <img class="m-4" style="width: 150px; height: 60px;" src="/img/clients/client-1.png" alt="">
+        </div>
+        <div class="col-2">
+          <img class="m-4" style="width: 150px; height: 60px;" src="/img/clients/client-2.png" alt="">
+        </div>
+        <div class="col-2">
+          <img class="m-4" style="width: 150px; height: 60px;" src="/img/clients/client-3.png" alt="">
+        </div>
+        <div class="col-2">
+          <img class="m-4" style="width: 150px; height: 60px;" src="/img/clients/client-4.png" alt="">
+        </div>
+        <div class="col-2">
+          <img class="m-4" style="width: 150px; height: 60px;" src="/img/clients/client-5.png" alt="">
+        </div>
+        <div class="col-2">
+          <img class="m-4" style="width: 150px; height: 60px;" src="/img/clients/client-6.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <!-- <h1> OUR CLIENTS goes here </h1> -->
+    <!-- <p> lorem text goes here</p> -->
+  </div>
+  <br>
+  <br>
+  <br>
+  <!-- <div class="row">
+    <div class="col-5"></div>
+    <div class="col-2">
+      <h2 class="ms-4">SERVICES</h2>
+    </div>
+    <div class="row m-2">
+      <div class="col-11 text-secondary text-center">Magnam dolores commodi suscipit. Necessitatibus eius
+        consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam
+        cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi
+        quidem hic quas.</div>
+    </div>
+  </div> -->
+  <!-- ======= Services Section ======= -->
+  <section id="services" class="services">
+    <div class="container">
 
- 
+      <div class="section-title">
+        <h2>Services</h2>
+        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+          consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
+          in iste officiis commodi quidem hic quas.</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+          <div class="icon-box iconbox-blue">
+            <div class="icon">
+              <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                  d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174">
+                </path>
+              </svg>
+              <i class="bx bxl-dribbble"></i>
+            </div>
+            <h4><a href="">Lorem Ipsum</a></h4>
+            <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+          </div>
+        </div>
+        <!--END OF CARD-->
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+          <div class="icon-box iconbox-orange ">
+            <div class="icon">
+              <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                  d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426">
+                </path>
+              </svg>
+              <i class="bx bx-file"></i>
+            </div>
+            <h4><a href="">Sed Perspiciatis</a></h4>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+          </div>
+        </div>
+        <!--END OF CARD-->
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="300">
+          <div class="icon-box iconbox-pink">
+            <div class="icon">
+              <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                  d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781">
+                </path>
+              </svg>
+              <i class="bx bx-tachometer"></i>
+            </div>
+            <h4><a href="">Magni Dolores</a></h4>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+          </div>
+        </div>
+      </div>
+      <!--END OF ROW-->
+      <div class="row">
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+          <div class="icon-box iconbox-yellow">
+            <div class="icon">
+              <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                  d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174">
+                </path>
+              </svg>
+              <i class="bx bx-layer"></i>
+            </div>
+            <h4><a href="">Nemo Enim</a></h4>
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+          <div class="icon-box iconbox-red">
+            <div class="icon">
+              <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                  d="M300,532.3542879108572C369.38199826031484,532.3153073249985,429.10787420159085,491.63046689027357,474.5244479745417,439.17860296908856C522.8885846962883,383.3225815378663,569.1668002868075,314.3205725914397,550.7432151929288,242.7694973846089C532.6665558377875,172.5657663291529,456.2379748765914,142.6223662098291,390.3689995646985,112.34683881706744C326.66090330228417,83.06452184765237,258.84405631176094,53.51806209861945,193.32584062364296,78.48882559362697C121.61183558270385,105.82097193414197,62.805066853699245,167.19869350419734,48.57481801355237,242.6138429142374C34.843463184063346,315.3850353017275,76.69343916112496,383.4422959591041,125.22947124332185,439.3748458443577C170.7312796277747,491.8107796887764,230.57421082200815,532.3932930995766,300,532.3542879108572">
+                </path>
+              </svg>
+              <i class="bx bx-slideshow"></i>
+            </div>
+            <h4><a href="">Dele Cardo</a></h4>
+            <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+          <div class="icon-box iconbox-teal">
+            <div class="icon">
+              <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                  d="M300,566.797414625762C385.7384707136149,576.1784315230908,478.7894351017131,552.8928747891023,531.9192734346935,484.94944893311C584.6109503024035,417.5663521118492,582.489472248146,322.67544863468447,553.9536738515405,242.03673114598146C529.1557734026468,171.96086150256528,465.24506316201064,127.66468636344209,395.9583748389544,100.7403814666027C334.2173773831606,76.7482773500951,269.4350130405921,84.62216499799875,207.1952322260088,107.2889140133804C132.92018162631612,134.33871894543012,41.79353780512637,160.00259165414826,22.644507872594943,236.69541883565114C3.319112789854554,314.0945973066697,72.72355303640163,379.243833228382,124.04198916343866,440.3218312028393C172.9286146004772,498.5055451809895,224.45579914871206,558.5317968840102,300,566.797414625762">
+                </path>
+              </svg>
+              <i class="bx bx-arch"></i>
+            </div>
+            <h4><a href="">Divera Don</a></h4>
+            <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
+          </div>
+        </div>
+      </div>
+      <!--END OF ROW-->
+    </div>
+  </section>
+
+  <br>
+  <div class="col-12 bg-success">
+    <div class="row">
+      <div class="col-6">
+        <h3 style="margin-left: 10rem;" class="fw-bold text-light mt-5">Call To Action</h3>
+      </div>
+      <div class="row">
+        <div class="col-8">
+          <p style=" margin-left: 10rem; width: 800px;" class="text-light mb-5">Lorem ipsum dolor sit
+            amet
+            consectetur adipisicing elit. Nemo quam ipsam animi quo, nisi distinctio totam, eveniet
+            vel
+            doloremque ullam, excepturi similique eaque suscipit illo?</p>
+        </div>
+        <div class="col-4">
+          <button type="button" style=" margin-left: 10rem;" class="btn text-light btn-outline-light">Call To
+            Action</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-5"></div>
+    <div class="col-2">
+      <h2 class="ms-4 mt-5">PORTFOLIO</h2>
+    </div>
+    <div class="row m-2">
+      <div class="col-11 text-Secondary text-center">Magnam dolores commodi suscipit. Necessitatibus eius
+        consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam
+        cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi
+        quidem hic quas.</div>
+    </div>
+  </div>
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="col-1"></div>
+      <div class=" col-3 align-self-center mt-5 p-3   X">
+        <img style="width: 345px; height: 400px;" src="/img pt2/Schermafbeelding 2024-06-10 095526.png"
+          alt="">
+      </div>
+      <!--END OF CARD-->
+
+      <div class=" col-3 align-self-center mt-5 p-3">
+        <img style="margin-bottom: 96px; width: 345px; height: 300px;"
+          src="img pt2/Schermafbeelding 2024-06-10 095637.png" alt="">
+      </div>
+      <!--END OF CARD-->
+      <div class=" col-3 align-self-start mt-5 p-3">
+        <img style="margin-bottom: 1px; width: 345px; height: 280px;"
+          src="img pt2/Schermafbeelding 2024-06-10 095716.png" alt="">
+      </div>
+      <!--END OF CARD-->
+      <div class="row">
+        <div class="col-1"></div>
+        <div class=" col-3 align-self-start p-3 ">
+          <img style="margin-bottom: 200px; width: 345px; height: 400px;"
+            src="img pt2/Schermafbeelding 2024-06-10 095844.png" alt="">
+        </div>
+        <!--END OF CARD-->
+        <div class=" col-3 align-self-start p-3 ">
+          <img style="margin-bottom: 110px; width: 345px; height: 50  0px;"
+            src="img pt2/Schermafbeelding 2024-06-10 095814.png" alt="">
+        </div>
+        <!--END OF CARD-->
+        <div class=" col-3 align-self-start p-3 ">
+          <img style="margin-bottom: 110px; width: 345px; height: 50  0px;"
+            src="img pt2/Schermafbeelding 2024-06-10 095742.png" alt="">
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="row">
+    <div class="col-5"></div>
+    <div class="col-2">
+      <h2 class="ms-4 mt-5">TEAM</h2>
+    </div>
+    <div class="row m-2">
+      <div class="col-11 text-Secondary text-center">Magnam dolores commodi suscipit. Necessitatibus eius
+        consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam
+        cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi
+        quidem hic quas.</div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-1"></div>
+        <!--END OF CARD-->
+        <div class="col-lg-3 col-md-6 d-flex align-self-center shadow-lg p-3 mb-5 bg-body m-3" data-aos="zoom-in"
+          data-aos-delay="300">
+          <div class="icon-box iconbox-pink">
+            <div class=" d-flex justify-content-center mt-5">
+              <img style=" border-radius: 50%; width: 250px; height: 250px;" src="/img/team/2.jpg"
+                alt="">
+            </div>
+            <h4 class="d-flex justify-content-center mt-2 fw-1000">Walter White</h4>
+            <p class="d-flex justify-content-center">CTO</p>
+            <p class="d-flex text-secondary justify-content-center mb-5">Excepteur sint occaecat
+              cupidatat non
+              proident, sunt in culpa qui officia</p>
+          </div>
+        </div>
+        <!--END OF CARD-->
+        <div class="col-lg-3 col-md-6 d-flex align-self-center shadow-lg p-3 mb-5 bg-body m-3" data-aos="zoom-in"
+          data-aos-delay="300">
+          <div class="icon-box iconbox-pink">
+            <div class=" d-flex justify-content-center mt-5">
+              <img style=" border-radius: 50%; width: 250px; height: 250px;" src="/img/team/3.jpg"
+                alt="">
+            </div>
+            <h4 class="d-flex justify-content-center mt-2 fw-1000">Sarah Jhinson</h4>
+            <p class="d-flex justify-content-center">CTO</p>
+            <p class="d-flex text-secondary justify-content-center mb-5">Excepteur sint occaecat
+              cupidatat non
+              proident, sunt in culpa qui officia</p>
+          </div>
+        </div>
+        <!--END OF CARD-->
+        <div class="col-lg-3 col-md-6 d-flex align-self-center shadow-lg p-3 mb-5 bg-body m-3" data-aos="zoom-in"
+          data-aos-delay="300">
+          <div class="icon-box iconbox-pink">
+            <div class=" d-flex justify-content-center mt-5">
+              <img style=" border-radius: 50%; width: 250px; height: 250px;" src="/img/team/4.jpg"
+                alt="">
+            </div>
+            <h4 class="d-flex justify-content-center mt-2 fw-1000">William Anderson</h4>
+            <p class="d-flex justify-content-center">CTO</p>
+            <p class="d-flex text-secondary justify-content-center mb-5">Excepteur sint occaecat
+              cupidatat non
+              proident, sunt in culpa qui officia</p>
+          </div>
+        </div>
+        <!--END OF CARD-->
 
 
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-5"></div>
+    <div class="col-2">
+      <h2 class="fw-1000 ms-4 mt-5">CONTACT</h2>
+    </div>
+    <div class="row m-2">
+      <div class="col-11 text-Secondary text-center">Magnam dolores commodi suscipit. Necessitatibus eius
+        consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam
+        cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi
+        quidem hic quas.</div>
+    </div>
+
+    <div class="row mt-5">
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-10">
+          <div class="row">
+            <div class="col-lg-5">
+              <iframe
+                src="https:/www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4910.179947353648!2d4.347315377227426!3d52.02345857193539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5b5d776440205%3A0xe5bfa517b4fd0e71!2sBrasserskade%201%2C%202612%20CA%20Delft!5e0!3m2!1snl!2snl!4v1713253149132!5m2!1snl!2snl"
+                width="600" height="450" style="border:0; width: 100%; height: 384px;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="col-lg-5">
+              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
+                  </div>
+                  <div class="col-md-6 form-group mt-3 mt-md-0">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                      required="">
+                  </div>
+                </div>
+
+                <div class="form-group mt-3">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required="">
+                </div>
+                <div class="form-group mt-3">
+                  <textarea class="form-control" name="message" rows="5" placeholder="Message" required=""></textarea>
+                </div>
+                <div class=" d-flex  justify-content-center mt-5"><button class="btn btn-primary bg-success p-3">Send
+                    Message</button></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+
+      <div class="container">
+        <div class="row text-center bg-black">
+          <div class="col-12">
+            <h3 class="text-light fw-bolder m-3">Green</h3>
+            <p class="text-light">Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime
+              saepe commodi placeat.</p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-skype"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p class="mt-3 text-light">&copy; Copyright <strong>Green</strong>. All Rights Reserved</p>
+            <p class="text-light">Designed by <a class="text-underline-none"
+                href="https://bootstrapmade.com/">BootstrapMade</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
 </body>
+
 
 </html>
